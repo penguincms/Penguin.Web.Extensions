@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Penguin.Web.Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:Penguin.Web.Extensions.ISessionExtensions.Get``1(Microsoft.AspNetCore.Http.ISession,System.String)">
+            <summary>
+            Gets a Typed value from the session
+            </summary>
+            <typeparam name="T">The type of the value to get</typeparam>
+            <param name="session">The session to retrieve it from</param>
+            <param name="key">The object key</param>
+            <returns>The typed object</returns>
+        </member>
+        <member name="M:Penguin.Web.Extensions.ISessionExtensions.Get``1(Microsoft.AspNetCore.Http.ISession)">
+            <summary>
+            Gets a typed object from the session by the class type
+            </summary>
+            <typeparam name="T">The type of the value to get</typeparam>
+            <param name="session">The session to retrieve it from</param>
+            <returns>The typed object</returns>
+        </member>
+        <member name="M:Penguin.Web.Extensions.ISessionExtensions.Get(Microsoft.AspNetCore.Http.ISession,System.String,System.Type)">
+            <summary>
+            Gets a typed object from the session by the class type
+            </summary>
+            <param name="session">The session to retrieve it from</param>
+            <param name="key">The object key</param>
+            <param name="t">The type of the value to get</param>
+            <returns>        /// <returns>The typed object</returns></returns>
+        </member>
+        <member name="M:Penguin.Web.Extensions.ISessionExtensions.Set(Microsoft.AspNetCore.Http.ISession,System.Object)">
+            <summary>
+            Sets an object to the session, using the type name as the key
+            </summary>
+            <param name="session">The session to set the object to</param>
+            <param name="value">The object to set</param>
+        </member>
+        <member name="M:Penguin.Web.Extensions.ISessionExtensions.Set``1(Microsoft.AspNetCore.Http.ISession,System.String,``0)">
+            <summary>
+            Sets an object to the session
+            </summary>
+            <typeparam name="T">The object type</typeparam>
+            <param name="session">The session to add the object to</param>
+            <param name="key">The key to add it with</param>
+            <param name="value">The actual object to add</param>
+        </member>
+    </members>
+</doc>
