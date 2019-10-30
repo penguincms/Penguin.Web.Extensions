@@ -5,6 +5,8 @@
     <Version>1.0.0</Version>
     <Description>A library for Asp.Net core extensions</Description>
     <PackageProjectUrl>https://github.com/penguincms/Penguin.Web.Extensions</PackageProjectUrl>
+    <AssemblyName>Penguin.Web.Extensions</AssemblyName>
+    <RootNamespace>Penguin.Web.Extensions</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
