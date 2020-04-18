@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.0</Version>
+    <Description>A library for Asp.Net core extensions</Description>
+    <PackageProjectUrl>https://github.com/penguincms/Penguin.Web.Extensions</PackageProjectUrl>
+    <AssemblyName>Penguin.Web.Extensions</AssemblyName>
+    <RootNamespace>Penguin.Web.Extensions</RootNamespace>
+    <DocumentationFile>Penguin.Web.Extensions.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+</Project>
