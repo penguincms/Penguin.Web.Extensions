@@ -71,7 +71,10 @@ namespace Penguin.Web.Extensions
         /// <param name="value">The object to set</param>
         public static void Set(this ISession session, object value)
         {
-            Contract.Requires(value != null);
+            if (value is null)
+            {
+                throw new System.ArgumentNullException(nameof(value));
+            }
 
             session.SetString(value.GetType().FullName, JsonConvert.SerializeObject(value));
         }
