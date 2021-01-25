@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using System.Diagnostics.Contracts;
 
 namespace Penguin.Web.Extensions
 {
