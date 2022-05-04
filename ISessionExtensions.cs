@@ -85,6 +85,9 @@ namespace Penguin.Web.Extensions
         /// <param name="session">The session to add the object to</param>
         /// <param name="key">The key to add it with</param>
         /// <param name="value">The actual object to add</param>
-        public static void Set<T>(this ISession session, string key, T value) => session.SetString(key, JsonConvert.SerializeObject(value));
+        public static void Set<T>(this ISession session, string key, T value)
+        {
+            session.SetString(key, JsonConvert.SerializeObject(value));
+        }
     }
 }
