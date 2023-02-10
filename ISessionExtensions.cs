@@ -12,7 +12,7 @@ namespace Penguin.Web.Extensions
         {
             get
             {
-                JsonSerializerSettings settings = new JsonSerializerSettings
+                JsonSerializerSettings settings = new()
                 {
                     ReferenceLoopHandling = ReferenceLoopHandling.Serialize,
                     PreserveReferencesHandling = PreserveReferencesHandling.Objects,
